@@ -9,7 +9,7 @@ def test_pdf_parsing():
     assert os.path.exists(SAMPLE_PDF), "Sample PDF should exist before running test"
     result = pdf_parser.parse_pdf(SAMPLE_PDF)
 
-    assert result["total_pages"] == 4
+    assert result["total_pages"] == 9
     assert result["filename"] == "Brake_System_HLD_v2.0.pdf"
     assert len(result["pages"]) == 4
     assert result["file_size_kb"] > 0

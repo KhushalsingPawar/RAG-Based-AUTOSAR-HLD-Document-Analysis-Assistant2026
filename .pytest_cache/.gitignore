@@ -1,0 +1,58 @@
+
+# ==============================
+# Environment variables and secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Python virtual environments
+# ==============================
+.venv/
+venv/
+env/
+
+# ==============================
+# Python cache files
+# ==============================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Generated databases
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================
+# Generated application data
+# ==============================
+data/uploads/
+data/vector_db/
+
+# Ignore generated sample files only if they are not required
+# data/sample_hlds/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# IDE and operating system files
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Node.js (if used later)
+# ==============================
+node_modules/

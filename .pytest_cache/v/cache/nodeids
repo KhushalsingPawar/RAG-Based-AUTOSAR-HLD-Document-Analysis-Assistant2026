@@ -1,0 +1,13 @@
+[
+  "tests/test_api_endpoints.py::test_auth_and_user_data_isolation",
+  "tests/test_api_endpoints.py::test_document_deletion",
+  "tests/test_api_endpoints.py::test_get_projects",
+  "tests/test_api_endpoints.py::test_health_endpoint",
+  "tests/test_api_endpoints.py::test_projects_unauthenticated",
+  "tests/test_api_endpoints.py::test_root_endpoint",
+  "tests/test_chunker.py::test_chunker_basic",
+  "tests/test_entity_extractor.py::test_entity_extraction",
+  "tests/test_pdf_parser.py::test_pdf_parsing",
+  "tests/test_validation_and_diff.py::test_diff_engine_detects_added_component",
+  "tests/test_validation_and_diff.py::test_validation_engine_detects_unassigned_port"
+]
