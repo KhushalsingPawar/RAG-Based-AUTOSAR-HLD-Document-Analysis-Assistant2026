@@ -1,15 +1,21 @@
 import streamlit as st
 import pandas as pd
+import sys
+from pathlib import Path
 from frontend.components.api_client import APIClient, BACKEND_URL
 from frontend.components.ui_helpers import inject_custom_css, render_citation
 from frontend.components.auth_page import render_auth_page, render_user_sidebar_widget
-
+from frontend.components.api_client import APIClient, BACKEND_URL
 st.set_page_config(
     page_title="AUTOSAR HLD Document Analysis Assistant",
     page_icon="🚗",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 inject_custom_css()
 
