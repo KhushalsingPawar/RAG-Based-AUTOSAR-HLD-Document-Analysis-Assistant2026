@@ -20,8 +20,8 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Also initialize immediately so test runners and imports have tables ready
-init_db()
+# # Also initialize immediately so test runners and imports have tables ready
+# init_db()
 
 # CORS Middleware (permitting Streamlit and external clients)
 app.add_middleware(

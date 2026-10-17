@@ -2,7 +2,6 @@ import os
 from typing import List, Dict, Any, Optional
 import chromadb
 from chromadb.config import Settings as ChromaSettings
-from sentence_transformers import SentenceTransformer
 from backend.app.config import settings
 
 
@@ -17,9 +16,13 @@ class VectorStoreService:
         self._collection = None
 
     @property
-    def embedder(self) -> SentenceTransformer:
+    def embedder(self):
         if self._embedder is None:
-            self._embedder = SentenceTransformer(settings.EMBEDDING_MODEL_NAME)
+            from sentence_transformers import SentenceTransformer
+
+            self._embedder = SentenceTransformer(
+                settings.EMBEDDING_MODEL_NAME
+            )
         return self._embedder
 
     @property
